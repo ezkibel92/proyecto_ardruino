@@ -1,0 +1,203 @@
+//Estas son las variables de los contactos del display de 7 segmentos a los INPUT de la placa Ardruino
+
+int a = 2;
+int b = 3;
+int c = 4;
+int d = 5;
+int e = 6;
+int f = 7;
+int g = 8;
+int boton = 9;
+
+void setup(){
+  
+   pinMode(a, OUTPUT);
+   pinMode(b, OUTPUT);
+   pinMode(c, OUTPUT);
+   pinMode(d, OUTPUT);
+   pinMode(e, OUTPUT);
+   pinMode(f, OUTPUT);
+   pinMode(g, OUTPUT);
+   pinMode(boton, INPUT);
+}
+  
+  void loop(){
+    
+    //Este while toma el pulso del pulsador y enciende los led, los mismo son encendido de forma de cascada. 
+    while(digitalRead(9) == HIGH){
+   
+        digitalWrite (a,HIGH);//número 0
+        digitalWrite (b,HIGH);
+        digitalWrite (c,HIGH);
+        digitalWrite (d,HIGH);
+        digitalWrite (e,HIGH);
+        digitalWrite (f,HIGH);
+        digitalWrite (g,LOW);
+        delay(1000);
+  
+  
+        digitalWrite (a,LOW);//número 1
+        digitalWrite (b,HIGH);
+        digitalWrite (c,HIGH);
+        digitalWrite (d,LOW);
+        digitalWrite (e,LOW);
+        digitalWrite (f,LOW);
+        digitalWrite (g,LOW);
+        delay(1000);
+
+         digitalWrite(a,HIGH);//número 2
+        digitalWrite (b,HIGH);
+        digitalWrite (c,LOW);
+        digitalWrite (d,HIGH);
+        digitalWrite (e,HIGH);
+        digitalWrite (f,LOW);
+        digitalWrite (g,HIGH);
+        delay(1000);
+
+        digitalWrite (a,HIGH);//número 3
+        digitalWrite (b,HIGH);
+        digitalWrite (c,HIGH);
+        digitalWrite (d,HIGH);
+        digitalWrite (e,LOW);
+        digitalWrite (f,LOW);
+        digitalWrite (g,HIGH); 
+        delay(1000);  
+
+
+        digitalWrite (a,LOW);//número 4
+        digitalWrite (b,HIGH);
+        digitalWrite (c,HIGH);
+        digitalWrite (d,LOW);
+        digitalWrite (e,LOW);
+        digitalWrite (f,HIGH);
+        digitalWrite (g,HIGH);   
+        delay(1000);                
+
+         digitalWrite (a,HIGH);//número 5
+        digitalWrite (b,LOW);
+        digitalWrite (c,HIGH);
+        digitalWrite (d,HIGH);
+        digitalWrite (e,LOW);
+        digitalWrite (f,HIGH);
+        digitalWrite (g,HIGH);
+        delay(1000);
+
+        digitalWrite (a,HIGH);//número 6
+        digitalWrite (b,LOW);
+        digitalWrite (c,HIGH);
+        digitalWrite (d,HIGH);
+        digitalWrite (e,HIGH);
+        digitalWrite (f,HIGH);
+        digitalWrite (g,HIGH);
+        delay(1000);  
+
+        digitalWrite (a,HIGH);//número 7
+        digitalWrite (b,HIGH);
+        digitalWrite (c,HIGH);
+        digitalWrite (d,LOW);
+        digitalWrite (e,LOW);
+        digitalWrite (f,LOW);
+        digitalWrite (g,LOW);   
+        delay(1000);
+
+        digitalWrite (a,HIGH);//número 8
+        digitalWrite (b,HIGH);
+        digitalWrite (c,HIGH);
+        digitalWrite (d,HIGH);
+        digitalWrite (e,HIGH);
+        digitalWrite (f,HIGH);
+        digitalWrite (g,HIGH);   
+        delay(1000);
+
+         digitalWrite (a,HIGH);//número 9
+        digitalWrite (b,HIGH);
+        digitalWrite (c,HIGH);
+        digitalWrite (d,HIGH);
+        digitalWrite (e,LOW);
+        digitalWrite (f,HIGH);
+        digitalWrite (g,HIGH);   
+        delay(1000); 
+
+        digitalWrite (a,LOW);//Letra H
+        digitalWrite (b,HIGH);
+        digitalWrite (c,HIGH);
+        digitalWrite (d,LOW);
+        digitalWrite (e,HIGH);
+        digitalWrite (f,HIGH);
+        digitalWrite (g,HIGH);   
+        delay(1000); 
+
+        digitalWrite (a,HIGH);//Letra O
+        digitalWrite (b,HIGH);
+        digitalWrite (c,HIGH);
+        digitalWrite (d,HIGH);
+        digitalWrite (e,HIGH);
+        digitalWrite (f,HIGH);
+        digitalWrite (g,LOW);   
+        delay(1000); 
+
+        digitalWrite (a,LOW);//Letra L
+        digitalWrite (b,LOW);
+        digitalWrite (c,LOW);
+        digitalWrite (d,HIGH);
+        digitalWrite (e,HIGH);
+        digitalWrite (f,HIGH);
+        digitalWrite (g,LOW);   
+        delay(1000); 
+
+        digitalWrite (a,HIGH);//Letra A
+        digitalWrite (b,HIGH);
+        digitalWrite (c,HIGH);
+        digitalWrite (d,LOW);
+        digitalWrite (e,HIGH);
+        digitalWrite (f,HIGH);
+        digitalWrite (g,HIGH);   
+        delay(1000);
+
+        digitalWrite (a,LOW);//número 1
+        digitalWrite (b,HIGH);
+        digitalWrite (c,HIGH);
+        digitalWrite (d,LOW);
+        digitalWrite (e,LOW);
+        digitalWrite (f,LOW);
+        digitalWrite (g,LOW);
+        delay(1000);
+
+        digitalWrite (a,HIGH);//signo º
+        digitalWrite (b,HIGH);
+        digitalWrite (c,LOW);
+        digitalWrite (d,LOW);
+        digitalWrite (e,LOW);
+        digitalWrite (f,HIGH);
+        digitalWrite (g,HIGH);
+        delay(1000);
+
+        digitalWrite (a,LOW);//letra I
+        digitalWrite (b,LOW);
+        digitalWrite (c,LOW);
+        digitalWrite (d,LOW);
+        digitalWrite (e,HIGH);
+        digitalWrite (f,HIGH);
+        digitalWrite (g,LOW);
+        delay(1000);
+
+        digitalWrite (a,HIGH);//letra F
+        digitalWrite (b,LOW);
+        digitalWrite (c,LOW);
+        digitalWrite (d,LOW);
+        digitalWrite (e,HIGH);
+        digitalWrite (f,HIGH);
+        digitalWrite (g,HIGH);
+        delay(1000);
+      
+     	digitalWrite (a,LOW);//Todo apagado
+        digitalWrite (b,LOW);
+        digitalWrite (c,LOW);
+        digitalWrite (d,LOW);
+        digitalWrite (e,LOW);
+        digitalWrite (f,LOW);
+        digitalWrite (g,LOW);
+        
+    }
+ 
+  }   
